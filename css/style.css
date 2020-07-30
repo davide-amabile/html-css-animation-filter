@@ -59,24 +59,58 @@
 
 .ex-5-square:hover {
   transform: scale(1.5);
-
 }
 
 .ex-5-square:active {
   transform: scale(0.5);
 }
 /* /quinto esercizio */
+
 .ex-6-img, .ex-7-img, .ex-8-img {
     width: 500px;
 }
+/* sesto esercizio */
 
+ .ex-6-img:hover {
+   filter: grayscale(100%);
+ }
+ /* /sesto esercizio */
+ /* esercizio 7/8 */
+
+ .ex-7-img, .ex-8-img {
+   transition: 3s;
+ }
+
+.ex-7-img:hover {
+  filter: grayscale(70%);
+  }
+
+  .ex-8-img:hover {
+    filter: sepia(80%);
+    border-radius: 10px;
+  }
+
+/* /esercizio 7/8 */
+/* esercizio 9 */
 .ex-9-img {
     margin: 50px 100px;
     width: 400px;
+    transition: 3s;
 }
+
+.ex-9-img:hover {
+  filter: sepia(90%);
+  border-radius: 15px;
+  transform: scale(1.5);
+}
+
+/* /esercizio 9 */
+/* esercizio 10 */
 .ex-10-icon {
     font-size: 60px;
 }
+
+/* 7esercizio 10 */
 .ex-11-icon {
     font-size: 60px;
 }
