@@ -108,18 +108,42 @@
 /* esercizio 10 */
 .ex-10-icon {
     font-size: 60px;
-    animation-name: spin;
-    animation-duration: infinite;
+    animation: spin 1s linear infinite;
 }
 
 @keyframes spin {
-   0% {transform:rotate(1turn);
+   0% {
+    transform:rotate(1turn);
   }
 }
-/* 7esercizio 10 */
+/* /esercizio 10 */
+/* esercizio 11 */
 .ex-11-icon {
     font-size: 60px;
 }
+
+.ex-11-icon:hover {
+  animation: spin8 3s linear;
+}
+
+@keyframes spin8 {
+ 0% {
+  transform: rotate(0);
+ }
+
+ 85% {
+   transform: rotate(270deg);
+ }
+
+ 100% {
+   transform: rotate(0);
+ }
+
+}
+
+
+/* /esercizio 11 */
+/* sercizio 12/13 */
 .ex-12-button, .ex-13-button {
     position: relative;
     display: block;
@@ -133,6 +157,30 @@
     text-align: center;
     text-decoration: none;
 }
+
+.ex-12-button:hover {
+  text-decoration: underline;
+  animation: spinHalf 2s linear;
+}
+
+@@keyframes spinHalf  {
+
+  0% {
+    transform: rotate(0);
+  }
+
+  50% {
+    transform: rotate(90deg);
+  }
+
+  100% {
+    transform: rotate(0);
+  }
+
+}
+/* /esercizio 12 */
+
+
 .ex-12-top-white, .ex-13-top-white {
     position: absolute;
     top: -10px;
